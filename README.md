@@ -2,7 +2,7 @@
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/nacos/nacos-server.svg?maxAge=60480)
 
-This project is rebuild of official nacos based on **alpine**, please refer to official website(https://github.com/alibaba/nacos).
+This project is rebuild of official nacos(1.3.0) based on **alpine**, please refer to official website(https://github.com/alibaba/nacos).
 
 ## Project directory
 
