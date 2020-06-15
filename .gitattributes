@@ -1,0 +1,5 @@
+*.sql           linguist-language=Dockerfile
+*.yaml          linguist-language=Dockerfile
+*.yml           linguist-language=Dockerfile
+*.xml           linguist-language=Dockerfile
+*.properties    linguist-language=Dockerfile
