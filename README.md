@@ -19,7 +19,8 @@ Run the following command：
 
   ```shell
   git clone --depth 1 https://github.com/leo18945/nacos-docker-alpine.git
-  cd nacos-docker
+
+  cd nacos-docker-alpine
   ```
 
 * Standalone Mysql
