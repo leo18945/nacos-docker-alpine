@@ -1,6 +1,6 @@
 # Nacos Docker
 
-![Docker Pulls](https://img.shields.io/docker/pulls/nacos/nacos-server.svg?maxAge=60480)
+[![automated](https://img.shields.io/docker/automated/leo18945/alpine-jre8-nacos.svg)](https://hub.docker.com/r/leo18945/alpine-jre8-nacos "Automated build on Docker Hub")
 
 This project is rebuild of official nacos(1.3.0) based on **alpine**, please refer to official website(https://github.com/alibaba/nacos).
 

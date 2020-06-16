@@ -1,0 +1,12 @@
+# Common
+*.md
+docker-compose.yml
+Dockerfile
+**/.DS_Store
+
+# git
+.git
+.gitattributes
+.gitignore
+
+# docker run folders
