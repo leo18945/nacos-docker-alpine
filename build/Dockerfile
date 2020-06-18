@@ -29,7 +29,7 @@ RUN addgroup -S nacos \
 USER nacos
 WORKDIR /$BASE_DIR
 
-ADD . .
+ADD --chown=nacos:nacos . .
 
 RUN mkdir -p logs \
 	&& cd logs \
