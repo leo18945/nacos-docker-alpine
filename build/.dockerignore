@@ -10,3 +10,4 @@ Dockerfile
 .gitignore
 
 # docker run folders
+work

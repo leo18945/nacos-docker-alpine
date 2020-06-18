@@ -22,28 +22,20 @@ ENV MODE="cluster" \
 
 ARG NACOS_VERSION=1.3.0
 
-RUN addgroup -S nacos && adduser -S nacos -G nacos \
+RUN addgroup -S nacos \
+    && adduser -S nacos -G nacos \
     && apk add --no-cache tini
 
 USER nacos
 WORKDIR /$BASE_DIR
 
-ADD Shanghai /usr/share/zoneinfo/Asia/Shanghai
-ADD bin bin
-ADD conf conf
-ADD init.d init.d
-ADD target target
+ADD . .
 
-# set startup log dir
 RUN mkdir -p logs \
 	&& cd logs \
 	&& touch start.out \
 	&& ln -sf /dev/stdout start.out \
 	&& ln -sf /dev/stderr start.out
-USER root
-RUN chmod +x bin/docker-startup.sh
-USER nacos
 
 EXPOSE 8848
 ENTRYPOINT ["/sbin/tini", "--", "bin/docker-startup.sh"]
-
